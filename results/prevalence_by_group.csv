@@ -1,0 +1,11 @@
+group,prevalence,ci_low,ci_high,stratifier
+Not obese,39.3,36.3,42.4,obesity
+Obese,59.7,56.0,63.4,obesity
+18-29,12.5,10.5,14.7,age_group
+30-39,33.7,28.4,39.3,age_group
+40-49,44.8,37.4,52.4,age_group
+50-59,62.9,55.8,69.5,age_group
+60-69,69.6,64.1,74.5,age_group
+70+,81.1,76.8,84.8,age_group
+Female,43.4,40.0,46.9,sex
+Male,52.7,49.1,56.4,sex

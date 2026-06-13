@@ -1,0 +1,103 @@
+{
+  "n_analytic": 5238,
+  "n_weighted_millions": 236.2,
+  "overall_prevalence_pct": 47.9,
+  "overall_ci": [
+    44.9,
+    51.0
+  ],
+  "prevalence_obese": [
+    {
+      "group": "Not obese",
+      "prevalence": 39.3,
+      "ci_low": 36.3,
+      "ci_high": 42.4
+    },
+    {
+      "group": "Obese",
+      "prevalence": 59.7,
+      "ci_low": 56.0,
+      "ci_high": 63.4
+    }
+  ],
+  "prevalence_by_age": [
+    {
+      "group": "18-29",
+      "prevalence": 12.5,
+      "ci_low": 10.5,
+      "ci_high": 14.7
+    },
+    {
+      "group": "30-39",
+      "prevalence": 33.7,
+      "ci_low": 28.4,
+      "ci_high": 39.3
+    },
+    {
+      "group": "40-49",
+      "prevalence": 44.8,
+      "ci_low": 37.4,
+      "ci_high": 52.4
+    },
+    {
+      "group": "50-59",
+      "prevalence": 62.9,
+      "ci_low": 55.8,
+      "ci_high": 69.5
+    },
+    {
+      "group": "60-69",
+      "prevalence": 69.6,
+      "ci_low": 64.1,
+      "ci_high": 74.5
+    },
+    {
+      "group": "70+",
+      "prevalence": 81.1,
+      "ci_low": 76.8,
+      "ci_high": 84.8
+    }
+  ],
+  "prevalence_by_sex": [
+    {
+      "group": "Female",
+      "prevalence": 43.4,
+      "ci_low": 40.0,
+      "ci_high": 46.9
+    },
+    {
+      "group": "Male",
+      "prevalence": 52.7,
+      "ci_low": 49.1,
+      "ci_high": 56.4
+    }
+  ],
+  "adjusted_or": [
+    {
+      "term": "Obesity (BMI>=30)",
+      "OR": 2.68,
+      "ci_low": 2.33,
+      "ci_high": 3.08,
+      "boot_replicates": 400
+    },
+    {
+      "term": "Age (per 10 years)",
+      "OR": 1.95,
+      "ci_low": 1.9,
+      "ci_high": 2.0,
+      "boot_replicates": 400
+    },
+    {
+      "term": "Female",
+      "OR": 0.54,
+      "ci_low": 0.47,
+      "ci_high": 0.62,
+      "boot_replicates": 400
+    }
+  ],
+  "definitions": {
+    "hypertension": "mean SBP>=130 OR mean DBP>=80 (2017 ACC/AHA) OR antihypertensive med",
+    "obesity": "BMI>=30",
+    "source": "NHANES 2017-2018, MEC examination sample"
+  }
+}

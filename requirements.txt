@@ -1,0 +1,7 @@
+# Pinned for reproducibility (Python 3.9). samplics constrains numpy<2 / pandas<2.
+pandas==1.5.3
+numpy==1.26.4
+matplotlib==3.9.4
+statsmodels==0.14.6
+samplics==0.4.11
+scipy==1.13.1

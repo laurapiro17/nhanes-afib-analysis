@@ -1,0 +1,8 @@
+# Raw public-data files are not committed — regenerate with `python src/fetch_data.py`
+data/*.xpt
+data/*.XPT
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store

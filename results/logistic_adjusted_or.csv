@@ -1,0 +1,4 @@
+term,OR,ci_low,ci_high,boot_replicates
+Obesity (BMI>=30),2.68,2.33,3.08,400
+Age (per 10 years),1.95,1.9,2.0,400
+Female,0.54,0.47,0.62,400
