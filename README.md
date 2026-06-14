@@ -9,6 +9,7 @@ builds the analytic dataset with correct missing-data handling, and produces
 (stratification, clustering, and sampling weights) — not a naïve unweighted
 summary.
 
+[![CI](https://github.com/laurapiro17/nhanes-afib-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/laurapiro17/nhanes-afib-analysis/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.9-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Data](https://img.shields.io/badge/data-NHANES%202017--2018-orange)
@@ -53,6 +54,18 @@ python src/analysis.py        # writes results/ and figures/, prints the summary
 
 Runtime: ~20s (the 400-replicate bootstrap dominates).
 
+## Tests
+
+```bash
+pip install pytest && pytest -q
+```
+
+The suite runs on synthetic frames (no data download needed), so CI is fast and
+deterministic. It pins down the missing-data handling — that an unmeasured person
+stays *missing* rather than being silently coded normotensive — the weighted
+prevalence estimator on a small known design, and the internal consistency of the
+committed `results.json` (CIs bracket the point estimates, obesity gradient holds).
+
 ## What's in here
 
 ```
@@ -60,6 +73,7 @@ src/fetch_data.py   download the NHANES public files (cached)
 src/analysis.py     dataset construction, design-based prevalence, bootstrap logistic regression, figures
 results/            prevalence_overall.csv, prevalence_by_group.csv, logistic_adjusted_or.csv, results.json
 figures/            prevalence by BMI category, prevalence by age group
+tests/              derivation logic, prevalence estimator, results.json consistency
 REPORT.md           the written analysis
 ```
 
